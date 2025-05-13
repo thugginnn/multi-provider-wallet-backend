@@ -10,7 +10,7 @@ Thank you for reviewing my submission for the Multi-Provider Wallet Backend tech
 - Secure JWT authentication and API key validation
 - Modular, scalable architecture (NestJS, TypeORM, PostgreSQL)
 - Webhook, admin, and provider-specific endpoints
-- Comprehensive documentation (`README.md` and `DOCUMENTATION.md`)
+- Comprehensive documentation (`README.md` and `DOCUMENTATION.md` in the repo root)
 - Sequence diagrams and detailed API docs
 
 ## How to Run
@@ -19,7 +19,11 @@ Thank you for reviewing my submission for the Multi-Provider Wallet Backend tech
 3. Copy `.env.example` to `.env` and fill in your config
 4. Run migrations (`npm run migration:run`)
 5. Start the app (`npm run start:dev`)
-6. Access API docs at `http://localhost:3000/api`
+6. Access API docs at `http://localhost:3000/api` (Swagger UI)
+
+## Documentation
+- **Setup & usage:** See `README.md`
+- **Architecture, API, security, diagrams, assumptions:** See `DOCUMENTATION.md`
 
 ## Notes
 - All sensitive config is in `.env.example`

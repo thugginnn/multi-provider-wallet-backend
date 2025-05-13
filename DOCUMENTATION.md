@@ -1022,3 +1022,12 @@ sequenceDiagram
     "isActive": false
   }
   ``` 
+
+## Assumptions & Trade-offs
+
+- Assumed all providers support webhooks for transaction status updates.
+- Used Redis for caching and rate limiting for simplicity and performance.
+- Chose JWT for stateless authentication; OAuth2 could be used for more complex needs.
+- Used TypeORM for rapid development; for high scale, a different ORM or raw SQL could be considered.
+- Tenant isolation is enforced at the application layer; for stricter isolation, separate databases per tenant could be used.
+- Swagger docs are provided at `/api` for API exploration and testing. 
